@@ -1,0 +1,31 @@
+ class Assignment {
+
+	public static void main(String[] args) {
+
+		System.out.println("....Tiffins....");
+System.out.println("SELECT FOOD ITEMS");
+String[] menu = { " Idli " , " vada " , "Dosa" , " poori " , " special Dosa" , "butter Dosa " , "Roti","Extra chutney" } ;
+		for ( String i : menu )
+		{
+			for (int x=1 ; x < 8 ; x++ ) {
+			 System.out.print(x + ".");
+            }
+             System.out.println(i);
+            
+		}
+System.out.println("5.place order");
+int items=0,flag = 0 , n =1;
+do {
+	switch(n)
+	{
+	case 1 :System.out.println("IDLI"); break;
+	case 2 :System.out.println("VADA");break;
+	case 3 :System.out.println("POORI");break;
+	case 4 :System.out.println("DOSA");break;
+	case 5 :flag= 4; break;
+	}
+	items++;
+}while(flag==1);
+System.out.println("you selected "+items+" items");
+}
+}
